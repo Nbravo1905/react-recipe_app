@@ -4,6 +4,7 @@
 
 .recipesSection {
   padding: 28px 70px;
+  margin-bottom: 30px;
 }
 
 .sectionTitle {
@@ -15,4 +16,31 @@
   letter-spacing: -0.6px;
   margin-bottom: 80px;
   margin-top: 0px;
+}
+
+.recipesList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.loadingText {
+  color: $color-primary;
+  font-family: $font-family-secondary;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.6px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.errorText {
+  color: $color-text;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.6px;
+  text-align: center;
 }
