@@ -1,0 +1,50 @@
+@use '../../scss/abstracts/variables' as *;
+@use '../../scss/abstracts/mixins' as *;
+
+.footer {
+  width: 100%;
+  background: #FFFFFF;
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 167.33px;
+  background: transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0%;
+  z-index: 1;
+}
+
+.sponsorLabel {
+  position: relative;
+  z-index: 2;
+  font-family: $font-family-secondary;
+  font-size: 56px;
+  color: #425966;
+  margin: 0;
+  padding: 0 0 40px 150px;
+  font-weight: 400;
+  font-style: italic;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.productsImage {
+  position: absolute;
+  right: 100px;
+  top: 0;
+  height: 100%;
+  width: auto;
+  max-width: 80%;
+  object-fit: contain;
+  object-position: right center;
+  z-index: 2;
+}
