@@ -1,7 +1,15 @@
-
 @forward 'abstracts/variables';
 @forward 'abstracts/mixins';
 
+@font-face {
+  font-family: 'Monster Clubhouse';
+  src: url('../assets/fonts/Monster Clubhouse.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
+  background-color: #fff;
 }

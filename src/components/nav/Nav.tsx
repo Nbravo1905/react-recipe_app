@@ -15,7 +15,7 @@ const Nav = () => {
   return (
     <header className={styles.navHeader}>
 
-      <div className={styles.logo}>RecipeApp</div>
+      <div className={styles.logo}>Recipe<span>App</span></div>
 
       <nav>
         <ul className={styles.navList}>
