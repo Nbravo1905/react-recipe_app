@@ -1,0 +1,14 @@
+@use '../../scss/abstracts/variables' as *;
+@use '../../scss/abstracts/mixins' as *;
+
+
+.recipesSection {
+  padding: 28px 70px;
+}
+
+.sectionTitle {
+  color: $color-primary;
+  font-size: 2.5rem;
+  font-family: $font-family-primary;
+  margin-bottom: 80px;
+}
