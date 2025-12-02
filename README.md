@@ -43,4 +43,4 @@ Aplicación web construída con React, TypeScript y Vite para explorar recetas d
 
 | Hero principal | Cards destacadas | Sección de servicios |
 | -------------- | ---------------- | -------------------- |
-| <img src="./src/assets/preview1.png" width="250" alt="preview1" /> | <img src="./src/assets/preview2.png.png" width="250" alt="Recetas destacadas" /> | <img src="./src/assets/preview3.png.svg" width="250" alt="Servicios" />
+| <img src="./src/assets/preview1.png" width="250" alt="preview1" /> | <img src="./src/assets/preview2.png" width="250" alt="Recetas destacadas" /> | <img src="./src/assets/preview3.png" width="250" alt="Servicios" />
