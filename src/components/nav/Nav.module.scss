@@ -20,6 +20,7 @@
   
   span {
     color: $color-primary;
+    font-family: $font-family-primary
   }
 }
 
@@ -40,5 +41,26 @@
 
   &:hover {
     color: $color-primary;
+  }
+}
+
+.navDestop {
+  display: none;
+}
+
+@include mobile {
+  .navHeader {
+    padding-inline: 20px;
+  }
+}
+
+@include desktop {
+
+  .navDestop {
+    display: block;
+  }
+
+  .homeIcon {
+    display: none;
   }
 }

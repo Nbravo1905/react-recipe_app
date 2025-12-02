@@ -1,5 +1,6 @@
 import styles from './Nav.module.scss';
 
+import homeIcon from '../../assets/ic_home.png';
 const MENU: string[] = [
   'Home',
   'Vegetarianos',
@@ -17,7 +18,7 @@ const Nav = () => {
 
       <div className={styles.logo}>Recipe<span>App</span></div>
 
-      <nav>
+      <nav className={styles.navDestop}>
         <ul className={styles.navList}>
           {
             MENU.map((menu) => (
@@ -28,6 +29,9 @@ const Nav = () => {
           }
         </ul>
       </nav>
+
+
+      <img src={homeIcon} className={styles.homeIcon} alt="home_menu" />
     </header>
   )
 }
