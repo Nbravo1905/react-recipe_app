@@ -11,7 +11,7 @@
 .heroImage {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 416px;
   object-fit: cover;
   filter: brightness(0.6);
 }
@@ -21,7 +21,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -80,8 +80,26 @@
   color: $color-text;
 }
 
-
+@include tablet {
+  .heroContent {
+    height: 20vh;
+    left: 120px;
+  }
+  .heroImage{
+    height: 234px;
+  }
+  .heroTitle {
+    font-size: 51px;
+  }
+  .heroSubtitle {
+    font-size: 51px;
+  }
+}
 @include mobile {
+  .heroContent {
+    height: 30vh;
+    left: 20px;
+  }
   .heroImage{
     height: 234px;
   }

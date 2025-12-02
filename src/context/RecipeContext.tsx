@@ -33,7 +33,7 @@ export const RecipeProvider = ({ children }: RecipeProviderProps) => {
     refetch,
   } = useQuery({
     queryKey: ['recipes'],
-    queryFn: () => recipeApi.getRandomRecipes(4),
+    queryFn: () => recipeApi.getRandomRecipes(6),
     staleTime: 1000 * 60 * 5, // 5 minutos
   });
 

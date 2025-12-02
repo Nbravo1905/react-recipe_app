@@ -18,7 +18,7 @@ const NewRecipes = () => {
       )}
 
       <div className={styles.recipesList}>
-        {recipes.slice(0, 4).map((recipe) => {
+        {recipes.slice(0, 6).map((recipe) => {
           return (
             <RecipeCard
               key={recipe.id}

@@ -48,3 +48,47 @@
   object-position: right center;
   z-index: 2;
 }
+
+@include tablet {
+  .footer {
+    min-height: 300px;
+  }
+
+  .footer::before {
+    height: 120px;
+  }
+
+  .sponsorLabel {
+    font-size: 36px;
+    padding: 0 0 30px 60px;
+  }
+
+  .productsImage {
+    right: 40px;
+    max-width: 40%;
+    top: 60px;
+  }
+}
+
+@include mobile {
+  .footer {
+    min-height: 150px;
+  }
+
+  .footer::before {
+    height: 100px;
+  }
+
+  .sponsorLabel {
+    font-size: 23px;
+    padding: 0 0 20px 20px;
+    white-space: normal;
+  }
+
+  .productsImage {
+    right: 10px;
+    max-width: 45%;
+    height: auto;
+    max-height: 80%;
+  }
+}

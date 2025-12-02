@@ -29,7 +29,7 @@ export interface RecipesResponse {
 
 export const recipeApi = {
   // Obtener recetas aleatorias
-  getRandomRecipes: async (number: number = 4): Promise<Recipe[]> => {
+  getRandomRecipes: async (number: number = 6): Promise<Recipe[]> => {
     const response = await apiClient.get('/random', {
       params: {
         number,

@@ -30,10 +30,10 @@ const Hero = () => {
       />
 
       <div className={styles.heroContent}>
-        <h1 className={styles.heroTitle}>
+        <span className={styles.heroTitle}>
           Recetas 
           <span className={styles.heroSubtitle}>para todos</span>
-        </h1>
+        </span>
       </div>
 
       <div className={styles.tabletMenu}>
