@@ -43,8 +43,4 @@ Aplicación web construída con React, TypeScript y Vite para explorar recetas d
 
 | Hero principal | Cards destacadas | Sección de servicios |
 | -------------- | ---------------- | -------------------- |
-| <img src="./src/assets/banner.png" width="250" alt="Hero" /> | <img src="./src/assets/products.png" width="250" alt="Recetas destacadas" /> | <img src="./src/assets/service.svg" width="250" alt="Servicios" /> |
-
-| Productos frescos | Ícono recetas rápidas | Torta especial |
-| ----------------- | --------------------- | -------------- |
-| <img src="./src/assets/plato.svg" width="200" alt="Plato" /> | <img src="./src/assets/fast-food.svg" width="200" alt="Fast food" /> | <img src="./src/assets/torta.svg" width="200" alt="Torta" /> |
+| <img src="./src/assets/preview1.png" width="250" alt="preview1" /> | <img src="./src/assets/preview2.png.png" width="250" alt="Recetas destacadas" /> | <img src="./src/assets/preview3.png.svg" width="250" alt="Servicios" />
