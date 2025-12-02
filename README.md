@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+> Puedes ver la muestra en vivo en [react-recipeapp-production.up.railway.app](https://react-recipeapp-production.up.railway.app).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Recipe App
 
-Currently, two official plugins are available:
+Aplicación web construída con React, TypeScript y Vite para explorar recetas destacadas, nuevas creaciones y tips culinarios con una interfaz visualmente atractiva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalación y ejecución
 
-## React Compiler
+### Prerrequisitos
+- Node.js 18+ y npm 9+ (o pnpm/yarn si prefieres).
+- Git para clonar el repositorio.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Pasos
+1. Clona el proyecto:
+   ```bash
+   git clone <tu-fork-o-este-repo>
+   cd recipe_app
+   ```
+2. Instala dependencias:
+   ```bash
+   npm install
+   ```
+3. Levanta el entorno de desarrollo con recarga en caliente:
+   ```bash
+   npm run dev
+   ```
+4. Genera la build optimizada (opcional):
+   ```bash
+   npm run build
+   npm run preview
+   ```
 
-## Expanding the ESLint configuration
+## Scripts disponibles
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Comando        | Descripción                                   |
+| -------------- | --------------------------------------------- |
+| `npm run dev`  | Servidor Vite con HMR.                        |
+| `npm run build`| Compila la aplicación para producción.        |
+| `npm run lint` | Ejecuta las reglas de ESLint configuradas.    |
+| `npm run preview` | Sirve la build generada para validación.  |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Previews
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Hero principal | Cards destacadas | Sección de servicios |
+| -------------- | ---------------- | -------------------- |
+| <img src="./src/assets/banner.png" width="250" alt="Hero" /> | <img src="./src/assets/products.png" width="250" alt="Recetas destacadas" /> | <img src="./src/assets/service.svg" width="250" alt="Servicios" /> |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Productos frescos | Ícono recetas rápidas | Torta especial |
+| ----------------- | --------------------- | -------------- |
+| <img src="./src/assets/plato.svg" width="200" alt="Plato" /> | <img src="./src/assets/fast-food.svg" width="200" alt="Fast food" /> | <img src="./src/assets/torta.svg" width="200" alt="Torta" /> |
