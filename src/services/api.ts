@@ -36,7 +36,6 @@ export const recipeApi = {
         addRecipeInformation: true,
       },
     });
-    console.log(response);
     return Array.isArray(response.data) ? response.data : (response.data.recipes || []);
   },
 };

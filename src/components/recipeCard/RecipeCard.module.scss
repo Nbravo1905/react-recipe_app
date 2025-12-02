@@ -12,16 +12,19 @@
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   overflow: visible;
+  transition: height 0.35s ease, box-shadow 0.35s ease;
 
   &:hover {
     height: 350px;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     .cardInfo {
+      opacity: 0;
       display: none;
     }
     .infoWrapper {
       display: block;
+      animation: fadeInUp 0.4s ease forwards;
     }
   }
 }
@@ -55,6 +58,10 @@
   font-size: 1.5rem;
   font-family: $font-family-primary;
   margin-bottom: 50px;
+}
+
+.cardInfo {
+  transition: opacity 0.25s ease;
 }
 
 .footer {
@@ -92,6 +99,18 @@
 
 .infoWrapper {
   display: none;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .infoItem {

@@ -39,7 +39,7 @@ const Hero = () => {
       <div className={styles.tabletMenu}>
         {
           MENU.map((itemMenu) => (
-            <div className={styles.cardTabletMenu}>
+            <div key={itemMenu.name} className={styles.cardTabletMenu}>
               <img src={itemMenu.icon} className={styles.iconTabletMenu} alt="carrot" />
               <span className={styles.textTabletMenu}>{itemMenu.name}</span>
             </div>
